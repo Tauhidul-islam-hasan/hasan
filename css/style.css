@@ -1,0 +1,637 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: hsl(210, 10%, 33%);
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    background-image: url(bal.png);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-color: white;
+}
+
+p {
+    line-height: 2rem;
+}
+
+footer {
+    padding: 2rem 5rem 0;
+    display: grid;
+    background-color: hsl(204, 50%, 96%);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(43, 41, 41);
+}
+
+a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+header,
+
+#bio,
+#quick-benefits,
+#access-clipboard,
+#security,
+#sir,
+#download {
+    padding: 6rem;
+}
+
+#landing-page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+#bio {
+    padding: 2rem 20rem;
+}
+
+#quick-benefits {
+    height: 650px;
+}
+
+#access-clipboard {
+    padding: 2rem 20rem 0;
+}
+
+#sir {
+    display: grid;
+    gap: 2rem;
+    padding: 6.8rem 2rem 2rem 6rem;
+}
+
+#download {
+    padding: 3rem 20rem;
+}
+
+.security {
+    display: grid;
+    gap: 2.5rem;
+}
+
+.super {
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.create,
+.remove,
+.quick {
+    grid-row: 2;
+}
+
+.computer {
+    float: left;
+    position: relative;
+    right: 13rem;
+}
+
+.computer-bio {
+    text-align: left;
+}
+
+.google,
+.ibm,
+.micro,
+.hp,
+.vector {
+    grid-row: 1;
+}
+
+
+.ios {
+    background-color: hsl(171, 66%, 44%);
+    padding: 12px 36px 12px;
+    color: white;
+    border: none;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    border-bottom: cadetblue inset;
+}
+
+.ios:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mac {
+    background-color: hsl(233, 100%, 69%);
+    padding: 12px 36px 12px;
+    color: white;
+    border: none;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    border-bottom: rgb(95, 125, 160) inset;
+}
+
+.mac:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+    max-width: 50px;
+    grid-column: 1;
+}
+
+.FAQs,
+.Contact {
+    grid-column: 2;
+}
+
+.Privacy,
+.Press {
+    grid-column: 3;
+}
+
+.Install {
+    grid-column: 4;
+}
+
+.social {
+    grid-column: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.FAQs,
+.Privacy.Install {
+    grid-row: 1;
+}
+
+.Press,
+.Contact {
+    grid-row: 2;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.insta,
+.fb,
+.twitter {
+    height: 1rem;
+}
+
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:320px) {
+
+    #bio,
+    #quick-benefits,
+    #access-clipboard,
+    #security,
+    #sir,
+    #download,
+    header,
+    footer,
+    p {
+        width: 100%;
+    }
+
+    #bio,
+    #quick-benefits,
+    #access-clipboard,
+    #security,
+    #sir,
+    #download {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .computer {
+        max-width: 100%;
+        position: initial;
+
+    }
+
+    .computer-bio {
+        position: relative;
+        top: 2rem;
+        text-align: center;
+    }
+
+    .device {
+        max-width: 100%;
+    }
+
+    .create,
+    .remove,
+    .quick,
+    .super {
+        grid-column: 1;
+        grid-row: inherit;
+
+    }
+
+    #sir {
+        display: grid;
+        gap: 5rem;
+        padding: 5rem 2rem 2rem 6rem;
+        justify-content: center;
+    }
+
+    .google,
+    .ibm,
+    .micro,
+    .hp,
+    .vector {
+        grid-column: 1;
+        grid-row: inherit;
+    }
+
+    footer {
+
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .social {
+        padding-top: 2rem;
+    }
+
+    .logo,
+    .FAQs,
+    .Contact,
+    .Press,
+    .Privacy,
+    .Install,
+    .social,
+    .attribution {
+        grid-column: 1;
+        grid-row: inherit;
+
+    }
+}
+
+@media (min-width:320px) and (max-width:480px) {
+
+    #bio,
+    #quick-benefits,
+    #access-clipboard,
+    #security,
+    #sir,
+    #download,
+    header,
+    footer,
+    p {
+        width: 100%;
+    }
+
+    #bio,
+    #quick-benefits,
+    #access-clipboard,
+    #security,
+    #sir,
+    #download {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .computer {
+        max-width: 100%;
+        position: initial;
+
+    }
+
+    .computer-bio {
+        position: relative;
+        top: 2rem;
+        text-align: center;
+    }
+
+    .device {
+        max-width: 100%;
+    }
+
+    .create,
+    .remove,
+    .quick,
+    .super {
+        grid-column: 1;
+        grid-row: inherit;
+
+    }
+
+    #sir {
+        display: grid;
+        gap: 5rem;
+        padding: 5rem 2rem 2rem 6rem;
+        justify-content: center;
+    }
+
+    .google,
+    .ibm,
+    .micro,
+    .hp,
+    .vector {
+        grid-column: 1;
+        grid-row: inherit;
+    }
+
+    footer {
+
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .social {
+        padding-top: 2rem;
+    }
+
+    .logo,
+    .FAQs,
+    .Contact,
+    .Press,
+    .Privacy,
+    .Install,
+    .social,
+    .attribution {
+        grid-column: 1;
+        grid-row: inherit;
+
+    }
+}
+
+@media (min-width:480px) and (max-width:768px) {
+
+    #bio,
+    #quick-benefits,
+    #access-clipboard,
+    #security,
+    #sir,
+    #download,
+    header,
+    footer,
+    p {
+        width: 100%;
+    }
+
+    #bio,
+    #quick-benefits,
+    #access-clipboard,
+    #security,
+    #sir,
+    #download {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .computer {
+        max-width: 100%;
+        position: initial;
+
+    }
+
+    .computer-bio {
+        position: relative;
+        top: 2rem;
+        text-align: center;
+    }
+
+    .device {
+        max-width: 100%;
+    }
+
+    .create,
+    .remove,
+    .quick,
+    .super {
+        grid-column: 1;
+        grid-row: inherit;
+
+    }
+
+    #sir {
+        display: grid;
+        gap: 5rem;
+        padding: 5rem 2rem 2rem 6rem;
+        justify-content: center;
+    }
+
+    .google,
+    .ibm,
+    .micro,
+    .hp,
+    .vector {
+        grid-column: 1;
+        grid-row: inherit;
+    }
+
+    footer {
+
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .social {
+        padding-top: 2rem;
+    }
+
+    .logo,
+    .FAQs,
+    .Contact,
+    .Press,
+    .Privacy,
+    .Install,
+    .social,
+    .attribution {
+        grid-column: 1;
+        grid-row: inherit;
+
+    }
+}
+@media (min-width:764px) and (max-width:1024px) {
+
+    #bio,
+    #quick-benefits,
+    #access-clipboard,
+    #security,
+    #sir,
+    #download,
+    header,
+    footer,
+    p {
+        width: 100%;
+    }
+
+    #bio,
+    #quick-benefits,
+    #access-clipboard,
+    #security,
+    #sir,
+    #download {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .computer {
+        max-width: 100%;
+        position: initial;
+
+    }
+
+    .computer-bio {
+        position: relative;
+        top: 2rem;
+        text-align: center;
+    }
+
+    .device {
+        max-width: 100%;
+    }
+
+    .create,
+    .remove,
+    .quick,
+    .super {
+        grid-column: 1;
+        grid-row: inherit;
+
+    }
+
+    #sir {
+        display: grid;
+        gap: 5rem;
+        padding: 5rem 2rem 2rem 6rem;
+        justify-content: center;
+    }
+
+    .google,
+    .ibm,
+    .micro,
+    .hp,
+    .vector {
+        grid-column: 1;
+        grid-row: inherit;
+    }
+
+    footer {
+
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .social {
+        padding-top: 2rem;
+    }
+
+    .logo,
+    .FAQs,
+    .Contact,
+    .Press,
+    .Privacy,
+    .Install,
+    .social,
+    .attribution {
+        grid-column: 1;
+        grid-row: inherit;
+
+    }
+}
+@media (min-width:1024px) and (max-width:1200px) {
+
+    #bio,
+    #quick-benefits,
+    #access-clipboard,
+    #security,
+    #sir,
+    #download,
+    header,
+    footer,
+    p {
+        width: 100%;
+    }
+
+    #bio,
+    #quick-benefits,
+    #access-clipboard,
+    #security,
+    #sir,
+    #download {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .computer {
+        max-width: 100%;
+        position: initial;
+
+    }
+
+    .computer-bio {
+        position: relative;
+        top: 2rem;
+        text-align: center;
+    }
+
+    .device {
+        max-width: 100%;
+    }
+
+    .create,
+    .remove,
+    .quick,
+    .super {
+        grid-column: 1;
+        grid-row: inherit;
+
+    }
+
+    #sir {
+        display: grid;
+        gap: 5rem;
+        padding: 5rem 2rem 2rem 6rem;
+        justify-content: center;
+    }
+
+    .google,
+    .ibm,
+    .micro,
+    .hp,
+    .vector {
+        grid-column: 1;
+        grid-row: inherit;
+    }
+
+    footer {
+
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .social {
+        padding-top: 2rem;
+    }
+
+    .logo,
+    .FAQs,
+    .Contact,
+    .Press,
+    .Privacy,
+    .Install,
+    .social,
+    .attribution {
+        grid-column: 1;
+        grid-row: inherit;
+
+    }
+}
